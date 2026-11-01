@@ -17,6 +17,9 @@ This project generates one synthetic customer dataset and reuses it for:
 3. Open Terminal > New Terminal.
 4. Create a virtual environment:
 
+
+python -m pip install pandas scikit-learn matplotlib
+
    ```powershell
    py -m venv .venv
    .\.venv\Scripts\Activate.ps1
@@ -27,18 +30,18 @@ This project generates one synthetic customer dataset and reuses it for:
    .venv\Scripts\activate.bat
    ```
 
-5. Install libraries:
+6. Install libraries:
    ```powershell
    python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
-6. Generate the shared dataset:
+7. Generate the shared dataset:
    ```powershell
    python generate_dataset.py
    ```
 
-7. Run each experiment separately:
+8. Run each experiment separately:
    ```powershell
    python exp1_regression_monthly_spending.py
    python exp2_regression_annual_income.py
